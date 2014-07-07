@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D4C799E196A33850067A3F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4C799D196A33850067A3F7 /* Cocoa.framework */; };
+		5D4C79A8196A33850067A3F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D4C79A6196A33850067A3F7 /* InfoPlist.strings */; };
+		5D4C79AA196A33850067A3F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79A9196A33850067A3F7 /* main.m */; };
+		5D4C79AE196A33850067A3F7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5D4C79AC196A33850067A3F7 /* Credits.rtf */; };
+		5D4C79B1196A33850067A3F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79B0196A33850067A3F7 /* AppDelegate.m */; };
+		5D4C79B4196A33850067A3F7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D4C79B2196A33850067A3F7 /* MainMenu.xib */; };
+		5D4C79B6196A33850067A3F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D4C79B5196A33850067A3F7 /* Images.xcassets */; };
+		5D4C79BD196A33860067A3F7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4C79BC196A33860067A3F7 /* XCTest.framework */; };
+		5D4C79BE196A33860067A3F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4C799D196A33850067A3F7 /* Cocoa.framework */; };
+		5D4C79C6196A33860067A3F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D4C79C4196A33860067A3F7 /* InfoPlist.strings */; };
+		5D4C79C8196A33860067A3F7 /* TournamentTheoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79C7196A33860067A3F7 /* TournamentTheoryTests.m */; };
+		5D4C79D4196A348F0067A3F7 /* Participant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79D3196A348F0067A3F7 /* Participant.m */; };
+		5D4C79D7196A34B10067A3F7 /* Tournament.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79D6196A34B10067A3F7 /* Tournament.m */; };
+		5D4C79DA196A34BF0067A3F7 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79D9196A34BF0067A3F7 /* Schedule.m */; };
+		5D4C79DD196A352C0067A3F7 /* Match.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79DC196A352C0067A3F7 /* Match.m */; };
+		5D4C79E0196A357F0067A3F7 /* Scheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79DF196A357F0067A3F7 /* Scheduler.m */; };
+		5D4C79E3196A35E80067A3F7 /* Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79E2196A35E80067A3F7 /* Round.m */; };
+		5D4C79E6196A3D550067A3F7 /* SchedulingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79E5196A3D550067A3F7 /* SchedulingUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D4C79BF196A33860067A3F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D4C7992196A33850067A3F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D4C7999196A33850067A3F7;
+			remoteInfo = TournamentTheory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D4C799A196A33850067A3F7 /* TournamentTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TournamentTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D4C799D196A33850067A3F7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5D4C79A0196A33850067A3F7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5D4C79A1196A33850067A3F7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5D4C79A2196A33850067A3F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D4C79A5196A33850067A3F7 /* TournamentTheory-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TournamentTheory-Info.plist"; sourceTree = "<group>"; };
+		5D4C79A7196A33850067A3F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D4C79A9196A33850067A3F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D4C79AB196A33850067A3F7 /* TournamentTheory-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TournamentTheory-Prefix.pch"; sourceTree = "<group>"; };
+		5D4C79AD196A33850067A3F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5D4C79AF196A33850067A3F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5D4C79B0196A33850067A3F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5D4C79B3196A33850067A3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5D4C79B5196A33850067A3F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5D4C79BB196A33860067A3F7 /* TournamentTheoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TournamentTheoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D4C79BC196A33860067A3F7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5D4C79C3196A33860067A3F7 /* TournamentTheoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TournamentTheoryTests-Info.plist"; sourceTree = "<group>"; };
+		5D4C79C5196A33860067A3F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D4C79C7196A33860067A3F7 /* TournamentTheoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TournamentTheoryTests.m; sourceTree = "<group>"; };
+		5D4C79D2196A348F0067A3F7 /* Participant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Participant.h; sourceTree = "<group>"; };
+		5D4C79D3196A348F0067A3F7 /* Participant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Participant.m; sourceTree = "<group>"; };
+		5D4C79D5196A34B10067A3F7 /* Tournament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tournament.h; sourceTree = "<group>"; };
+		5D4C79D6196A34B10067A3F7 /* Tournament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tournament.m; sourceTree = "<group>"; };
+		5D4C79D8196A34BF0067A3F7 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		5D4C79D9196A34BF0067A3F7 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		5D4C79DB196A352C0067A3F7 /* Match.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Match.h; sourceTree = "<group>"; };
+		5D4C79DC196A352C0067A3F7 /* Match.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Match.m; sourceTree = "<group>"; };
+		5D4C79DE196A357F0067A3F7 /* Scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheduler.h; sourceTree = "<group>"; };
+		5D4C79DF196A357F0067A3F7 /* Scheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scheduler.m; sourceTree = "<group>"; };
+		5D4C79E1196A35E80067A3F7 /* Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Round.h; sourceTree = "<group>"; };
+		5D4C79E2196A35E80067A3F7 /* Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Round.m; sourceTree = "<group>"; };
+		5D4C79E4196A3D550067A3F7 /* SchedulingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedulingUtils.h; sourceTree = "<group>"; };
+		5D4C79E5196A3D550067A3F7 /* SchedulingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedulingUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D4C7997196A33850067A3F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D4C799E196A33850067A3F7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D4C79B8196A33860067A3F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D4C79BE196A33860067A3F7 /* Cocoa.framework in Frameworks */,
+				5D4C79BD196A33860067A3F7 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D4C7991196A33850067A3F7 = {
+			isa = PBXGroup;
+			children = (
+				5D4C79A3196A33850067A3F7 /* TournamentTheory */,
+				5D4C79C1196A33860067A3F7 /* TournamentTheoryTests */,
+				5D4C799C196A33850067A3F7 /* Frameworks */,
+				5D4C799B196A33850067A3F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D4C799B196A33850067A3F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C799A196A33850067A3F7 /* TournamentTheory.app */,
+				5D4C79BB196A33860067A3F7 /* TournamentTheoryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D4C799C196A33850067A3F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C799D196A33850067A3F7 /* Cocoa.framework */,
+				5D4C79BC196A33860067A3F7 /* XCTest.framework */,
+				5D4C799F196A33850067A3F7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D4C799F196A33850067A3F7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C79A0196A33850067A3F7 /* AppKit.framework */,
+				5D4C79A1196A33850067A3F7 /* CoreData.framework */,
+				5D4C79A2196A33850067A3F7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5D4C79A3196A33850067A3F7 /* TournamentTheory */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C79D1196A340F0067A3F7 /* TournamentObjects */,
+				5D4C79AF196A33850067A3F7 /* AppDelegate.h */,
+				5D4C79B0196A33850067A3F7 /* AppDelegate.m */,
+				5D4C79B2196A33850067A3F7 /* MainMenu.xib */,
+				5D4C79B5196A33850067A3F7 /* Images.xcassets */,
+				5D4C79A4196A33850067A3F7 /* Supporting Files */,
+			);
+			path = TournamentTheory;
+			sourceTree = "<group>";
+		};
+		5D4C79A4196A33850067A3F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C79A5196A33850067A3F7 /* TournamentTheory-Info.plist */,
+				5D4C79A6196A33850067A3F7 /* InfoPlist.strings */,
+				5D4C79A9196A33850067A3F7 /* main.m */,
+				5D4C79AB196A33850067A3F7 /* TournamentTheory-Prefix.pch */,
+				5D4C79AC196A33850067A3F7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D4C79C1196A33860067A3F7 /* TournamentTheoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C79C7196A33860067A3F7 /* TournamentTheoryTests.m */,
+				5D4C79C2196A33860067A3F7 /* Supporting Files */,
+			);
+			path = TournamentTheoryTests;
+			sourceTree = "<group>";
+		};
+		5D4C79C2196A33860067A3F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C79C3196A33860067A3F7 /* TournamentTheoryTests-Info.plist */,
+				5D4C79C4196A33860067A3F7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D4C79D1196A340F0067A3F7 /* TournamentObjects */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C79DB196A352C0067A3F7 /* Match.h */,
+				5D4C79DC196A352C0067A3F7 /* Match.m */,
+				5D4C79D2196A348F0067A3F7 /* Participant.h */,
+				5D4C79D3196A348F0067A3F7 /* Participant.m */,
+				5D4C79E1196A35E80067A3F7 /* Round.h */,
+				5D4C79E2196A35E80067A3F7 /* Round.m */,
+				5D4C79D8196A34BF0067A3F7 /* Schedule.h */,
+				5D4C79D9196A34BF0067A3F7 /* Schedule.m */,
+				5D4C79DE196A357F0067A3F7 /* Scheduler.h */,
+				5D4C79DF196A357F0067A3F7 /* Scheduler.m */,
+				5D4C79D5196A34B10067A3F7 /* Tournament.h */,
+				5D4C79D6196A34B10067A3F7 /* Tournament.m */,
+				5D4C79E4196A3D550067A3F7 /* SchedulingUtils.h */,
+				5D4C79E5196A3D550067A3F7 /* SchedulingUtils.m */,
+			);
+			name = TournamentObjects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D4C7999196A33850067A3F7 /* TournamentTheory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D4C79CB196A33860067A3F7 /* Build configuration list for PBXNativeTarget "TournamentTheory" */;
+			buildPhases = (
+				5D4C7996196A33850067A3F7 /* Sources */,
+				5D4C7997196A33850067A3F7 /* Frameworks */,
+				5D4C7998196A33850067A3F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TournamentTheory;
+			productName = TournamentTheory;
+			productReference = 5D4C799A196A33850067A3F7 /* TournamentTheory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D4C79BA196A33860067A3F7 /* TournamentTheoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D4C79CE196A33860067A3F7 /* Build configuration list for PBXNativeTarget "TournamentTheoryTests" */;
+			buildPhases = (
+				5D4C79B7196A33860067A3F7 /* Sources */,
+				5D4C79B8196A33860067A3F7 /* Frameworks */,
+				5D4C79B9196A33860067A3F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D4C79C0196A33860067A3F7 /* PBXTargetDependency */,
+			);
+			name = TournamentTheoryTests;
+			productName = TournamentTheoryTests;
+			productReference = 5D4C79BB196A33860067A3F7 /* TournamentTheoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D4C7992196A33850067A3F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Steven Pautler";
+				TargetAttributes = {
+					5D4C79BA196A33860067A3F7 = {
+						TestTargetID = 5D4C7999196A33850067A3F7;
+					};
+				};
+			};
+			buildConfigurationList = 5D4C7995196A33850067A3F7 /* Build configuration list for PBXProject "TournamentTheory" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D4C7991196A33850067A3F7;
+			productRefGroup = 5D4C799B196A33850067A3F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D4C7999196A33850067A3F7 /* TournamentTheory */,
+				5D4C79BA196A33860067A3F7 /* TournamentTheoryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D4C7998196A33850067A3F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D4C79A8196A33850067A3F7 /* InfoPlist.strings in Resources */,
+				5D4C79B6196A33850067A3F7 /* Images.xcassets in Resources */,
+				5D4C79AE196A33850067A3F7 /* Credits.rtf in Resources */,
+				5D4C79B4196A33850067A3F7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D4C79B9196A33860067A3F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D4C79C6196A33860067A3F7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D4C7996196A33850067A3F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D4C79E6196A3D550067A3F7 /* SchedulingUtils.m in Sources */,
+				5D4C79DA196A34BF0067A3F7 /* Schedule.m in Sources */,
+				5D4C79D7196A34B10067A3F7 /* Tournament.m in Sources */,
+				5D4C79E3196A35E80067A3F7 /* Round.m in Sources */,
+				5D4C79D4196A348F0067A3F7 /* Participant.m in Sources */,
+				5D4C79E0196A357F0067A3F7 /* Scheduler.m in Sources */,
+				5D4C79DD196A352C0067A3F7 /* Match.m in Sources */,
+				5D4C79B1196A33850067A3F7 /* AppDelegate.m in Sources */,
+				5D4C79AA196A33850067A3F7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D4C79B7196A33860067A3F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D4C79C8196A33860067A3F7 /* TournamentTheoryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D4C79C0196A33860067A3F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D4C7999196A33850067A3F7 /* TournamentTheory */;
+			targetProxy = 5D4C79BF196A33860067A3F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D4C79A6196A33850067A3F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D4C79A7196A33850067A3F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5D4C79AC196A33850067A3F7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D4C79AD196A33850067A3F7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5D4C79B2196A33850067A3F7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D4C79B3196A33850067A3F7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		5D4C79C4196A33860067A3F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D4C79C5196A33860067A3F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D4C79C9196A33860067A3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5D4C79CA196A33860067A3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5D4C79CC196A33860067A3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TournamentTheory/TournamentTheory-Prefix.pch";
+				INFOPLIST_FILE = "TournamentTheory/TournamentTheory-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5D4C79CD196A33860067A3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TournamentTheory/TournamentTheory-Prefix.pch";
+				INFOPLIST_FILE = "TournamentTheory/TournamentTheory-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5D4C79CF196A33860067A3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TournamentTheory.app/Contents/MacOS/TournamentTheory";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TournamentTheory/TournamentTheory-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TournamentTheoryTests/TournamentTheoryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5D4C79D0196A33860067A3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TournamentTheory.app/Contents/MacOS/TournamentTheory";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TournamentTheory/TournamentTheory-Prefix.pch";
+				INFOPLIST_FILE = "TournamentTheoryTests/TournamentTheoryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D4C7995196A33850067A3F7 /* Build configuration list for PBXProject "TournamentTheory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D4C79C9196A33860067A3F7 /* Debug */,
+				5D4C79CA196A33860067A3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D4C79CB196A33860067A3F7 /* Build configuration list for PBXNativeTarget "TournamentTheory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D4C79CC196A33860067A3F7 /* Debug */,
+				5D4C79CD196A33860067A3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5D4C79CE196A33860067A3F7 /* Build configuration list for PBXNativeTarget "TournamentTheoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D4C79CF196A33860067A3F7 /* Debug */,
+				5D4C79D0196A33860067A3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D4C7992196A33850067A3F7 /* Project object */;
+}
