@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class Schedule;
 @interface Scheduler : NSObject
+
+- (Schedule*) balancedRoundRobinTournamentWithParticipants:(NSArray*)participants
+                                   numberOfMatchesPerRound:(NSUInteger)numMatchesPerRound;
 
 @end

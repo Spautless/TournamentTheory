@@ -10,4 +10,8 @@
 
 @implementation Round
 
+-(NSUInteger)numberOfMatches {
+    return [_matches count];
+}
+
 @end

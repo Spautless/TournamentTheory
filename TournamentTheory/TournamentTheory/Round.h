@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+//a Round
 @interface Round : NSObject
+
+//array of Match objects
+@property (strong) NSArray* matches;
+
+- (NSUInteger) numberOfMatches;
 
 @end

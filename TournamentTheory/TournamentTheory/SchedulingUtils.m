@@ -10,4 +10,9 @@
 
 @implementation SchedulingUtils
 
++ (NSUInteger) numberOfMatchesForRoundRobinTournamentWithNumberOfParticipants:(NSUInteger)numParticipants {
+    NSUInteger n = numParticipants;
+    return n*(n-1)/2;
+}
+
 @end

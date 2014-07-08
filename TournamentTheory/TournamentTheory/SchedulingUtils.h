@@ -10,4 +10,6 @@
 
 @interface SchedulingUtils : NSObject
 
++ (NSUInteger) numberOfMatchesForRoundRobinTournamentWithNumberOfParticipants:(NSUInteger)numParticipants;
+
 @end

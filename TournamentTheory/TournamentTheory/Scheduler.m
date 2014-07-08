@@ -7,7 +7,15 @@
 //
 
 #import "Scheduler.h"
+#import "Schedule.h"
+#import "SchedulingUtils.h"
+
 
 @implementation Scheduler
+
+- (Schedule*) balancedRoundRobinTournamentWithParticipants:(NSArray*)participants
+                                   numberOfMatchesPerRound:(NSUInteger)numMatchesPerRound {
+    return nil;
+}
 
 @end

@@ -10,4 +10,9 @@
 
 @interface Schedule : NSObject
 
+//array of Round objects
+@property (strong) NSArray* rounds;
+
+- (NSUInteger) numberOfRounds;
+
 @end

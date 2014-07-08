@@ -10,4 +10,8 @@
 
 @implementation Schedule
 
+- (NSUInteger) numberOfRounds {
+    return [_rounds count];
+}
+
 @end
