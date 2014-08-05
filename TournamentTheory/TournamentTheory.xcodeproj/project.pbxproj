@@ -25,6 +25,7 @@
 		5D4C79E0196A357F0067A3F7 /* Scheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79DF196A357F0067A3F7 /* Scheduler.m */; };
 		5D4C79E3196A35E80067A3F7 /* Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79E2196A35E80067A3F7 /* Round.m */; };
 		5D4C79E6196A3D550067A3F7 /* SchedulingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C79E5196A3D550067A3F7 /* SchedulingUtils.m */; };
+		5D7C4F671971E71300426CD9 /* RoundRobinSchedulerEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7C4F661971E71300426CD9 /* RoundRobinSchedulerEnumerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		5D4C79E2196A35E80067A3F7 /* Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Round.m; sourceTree = "<group>"; };
 		5D4C79E4196A3D550067A3F7 /* SchedulingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedulingUtils.h; sourceTree = "<group>"; };
 		5D4C79E5196A3D550067A3F7 /* SchedulingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedulingUtils.m; sourceTree = "<group>"; };
+		5D7C4F651971E71300426CD9 /* RoundRobinSchedulerEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundRobinSchedulerEnumerator.h; sourceTree = "<group>"; };
+		5D7C4F661971E71300426CD9 /* RoundRobinSchedulerEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundRobinSchedulerEnumerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +196,8 @@
 				5D4C79D6196A34B10067A3F7 /* Tournament.m */,
 				5D4C79E4196A3D550067A3F7 /* SchedulingUtils.h */,
 				5D4C79E5196A3D550067A3F7 /* SchedulingUtils.m */,
+				5D7C4F651971E71300426CD9 /* RoundRobinSchedulerEnumerator.h */,
+				5D7C4F661971E71300426CD9 /* RoundRobinSchedulerEnumerator.m */,
 			);
 			name = TournamentObjects;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				5D4C79E6196A3D550067A3F7 /* SchedulingUtils.m in Sources */,
 				5D4C79DA196A34BF0067A3F7 /* Schedule.m in Sources */,
 				5D4C79D7196A34B10067A3F7 /* Tournament.m in Sources */,
+				5D7C4F671971E71300426CD9 /* RoundRobinSchedulerEnumerator.m in Sources */,
 				5D4C79E3196A35E80067A3F7 /* Round.m in Sources */,
 				5D4C79D4196A348F0067A3F7 /* Participant.m in Sources */,
 				5D4C79E0196A357F0067A3F7 /* Scheduler.m in Sources */,
@@ -516,6 +522,7 @@
 				5D4C79CD196A33860067A3F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D4C79CE196A33860067A3F7 /* Build configuration list for PBXNativeTarget "TournamentTheoryTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +531,7 @@
 				5D4C79D0196A33860067A3F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

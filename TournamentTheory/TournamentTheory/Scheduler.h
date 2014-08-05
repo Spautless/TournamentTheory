@@ -8,10 +8,29 @@
 
 #import <Foundation/Foundation.h>
 
-@class Schedule;
+//a simple tiered linked list data structure built to enumerate
+//pairs of participants in a "balanced manner".
+//To be "balanced" means every matchup created consists of those
+//two participants which have been waiting the longest since their
+//last matchup.
+@class Schedule, Match, Round;
 @interface Scheduler : NSObject
 
-- (Schedule*) balancedRoundRobinTournamentWithParticipants:(NSArray*)participants
++ (Scheduler*) schedulerWithParticipants:(NSArray*)participants
+                 numberOfMatchesPerRound:(NSUInteger)numMatchesPerRound;
+
+- (Match*) nextMatch;
+- (BOOL) hasNextMatch;
+- (Round*) nextRound;
+- (BOOL) hasNextRound;
+
+@property (strong) NSArray *participants;
+@property (assign) NSUInteger matchesPerRound;
+
+//this method uses a tiered linked list for creating a balanced red robin tourney
++ (Schedule*) balancedRoundRobinTournamentWithParticipants:(NSArray*)participants
                                    numberOfMatchesPerRound:(NSUInteger)numMatchesPerRound;
+
+
 
 @end
